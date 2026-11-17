@@ -1,0 +1,19 @@
+[package]
+name = "audio-core"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+session-core = { path = "../session-core" }
+plugin-host = { path = "../plugin-host" }
+cpal.workspace = true
+rtrb.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+uuid.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows.workspace = true
+
+[lints]
+workspace = true

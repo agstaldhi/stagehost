@@ -1,0 +1,25 @@
+[package]
+name = "ui-app"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "stagehost"
+path = "src/main.rs"
+
+[dependencies]
+audio-core = { path = "../audio-core" }
+plugin-host = { path = "../plugin-host" }
+session-core = { path = "../session-core" }
+eframe.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+uuid.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows.workspace = true
+
+[lints]
+workspace = true

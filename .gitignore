@@ -1,0 +1,26 @@
+# Rust build output
+/target/
+
+# Runtime logs (e.g. stdout/stderr redirects of stagehost.exe)
+*.log
+
+# AI agent workspaces, reports, and instruction files
+/anti-slop/
+/DESIGN.md
+.gemini/
+.agents/
+.agent/
+.claude/
+.cursor/
+.windsurf/
+.codex/
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+
+# Editor and OS files
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini

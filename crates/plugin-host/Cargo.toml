@@ -1,0 +1,17 @@
+[package]
+name = "plugin-host"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+session-core = { path = "../session-core" }
+clap-sys.workspace = true
+vst3.workspace = true
+libloading.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+
+[lints]
+workspace = true
